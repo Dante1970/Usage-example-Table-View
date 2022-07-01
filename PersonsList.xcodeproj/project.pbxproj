@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		BEBB7C0E286CE11900DB7500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C0D286CE11900DB7500 /* AppDelegate.swift */; };
 		BEBB7C10286CE11900DB7500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C0F286CE11900DB7500 /* SceneDelegate.swift */; };
-		BEBB7C12286CE11900DB7500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C11286CE11900DB7500 /* ViewController.swift */; };
 		BEBB7C15286CE11900DB7500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBB7C13286CE11900DB7500 /* Main.storyboard */; };
 		BEBB7C17286CE11900DB7500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEBB7C16286CE11900DB7500 /* Assets.xcassets */; };
 		BEBB7C1A286CE11900DB7500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBB7C18286CE11900DB7500 /* LaunchScreen.storyboard */; };
+		BEBB7C22286CE14700DB7500 /* PersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C21286CE14700DB7500 /* PersonsListTableViewController.swift */; };
+		BEBB7C24286CE30300DB7500 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C23286CE30300DB7500 /* PersonDetailViewController.swift */; };
+		BEBB7C26286CE6B100DB7500 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C25286CE6B100DB7500 /* Person.swift */; };
+		BEBB7C28286CE76F00DB7500 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C27286CE76F00DB7500 /* DataManager.swift */; };
+		BEBB7C2C286CFFE500DB7500 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7C2B286CFFE500DB7500 /* SecondTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEBB7C0A286CE11900DB7500 /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBB7C0D286CE11900DB7500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEBB7C0F286CE11900DB7500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEBB7C11286CE11900DB7500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEBB7C14286CE11900DB7500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEBB7C16286CE11900DB7500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEBB7C19286CE11900DB7500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEBB7C1B286CE11900DB7500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEBB7C21286CE14700DB7500 /* PersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewController.swift; sourceTree = "<group>"; };
+		BEBB7C23286CE30300DB7500 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		BEBB7C25286CE6B100DB7500 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BEBB7C27286CE76F00DB7500 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BEBB7C2B286CFFE500DB7500 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				BEBB7C0D286CE11900DB7500 /* AppDelegate.swift */,
 				BEBB7C0F286CE11900DB7500 /* SceneDelegate.swift */,
-				BEBB7C11286CE11900DB7500 /* ViewController.swift */,
 				BEBB7C13286CE11900DB7500 /* Main.storyboard */,
+				BEBB7C29286CE77700DB7500 /* Model */,
+				BEBB7C2A286CE78B00DB7500 /* ViewControllers */,
 				BEBB7C16286CE11900DB7500 /* Assets.xcassets */,
 				BEBB7C18286CE11900DB7500 /* LaunchScreen.storyboard */,
 				BEBB7C1B286CE11900DB7500 /* Info.plist */,
 			);
 			path = PersonsList;
+			sourceTree = "<group>";
+		};
+		BEBB7C29286CE77700DB7500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB7C25286CE6B100DB7500 /* Person.swift */,
+				BEBB7C27286CE76F00DB7500 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEBB7C2A286CE78B00DB7500 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB7C23286CE30300DB7500 /* PersonDetailViewController.swift */,
+				BEBB7C21286CE14700DB7500 /* PersonsListTableViewController.swift */,
+				BEBB7C2B286CFFE500DB7500 /* SecondTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBB7C12286CE11900DB7500 /* ViewController.swift in Sources */,
+				BEBB7C26286CE6B100DB7500 /* Person.swift in Sources */,
+				BEBB7C28286CE76F00DB7500 /* DataManager.swift in Sources */,
+				BEBB7C24286CE30300DB7500 /* PersonDetailViewController.swift in Sources */,
 				BEBB7C0E286CE11900DB7500 /* AppDelegate.swift in Sources */,
+				BEBB7C2C286CFFE500DB7500 /* SecondTableViewController.swift in Sources */,
+				BEBB7C22286CE14700DB7500 /* PersonsListTableViewController.swift in Sources */,
 				BEBB7C10286CE11900DB7500 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
